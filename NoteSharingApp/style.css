@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+/* css for navigation */
+nav {
+    background-color: rgb(184, 175, 76);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* css for the aap name susannotes */
+.app-name {
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    font-size: 28px;
+    animation: textAnimation 2s infinite;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu li a:hover::after,
+.menu li a.active::after {
+    transform: scaleX(1);
+}
+
+/* css fo the animetion of the appname */
+@keyframes textAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* css for logo */
+.logo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section.home {
+    position: relative;
+    height: 400px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("background.png");
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.content {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    /* Increase the padding to make the button larger */
+    font-size: 20px;
+    /* Increase the font size to make the text larger */
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.blogs {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.blog img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.blog h3 {
+    margin-top: 10px;
+}
+
+.blog p {
+    margin-top: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #45a049;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #357d3e;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+.view-notes table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.view-notes th,
+.view-notes td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.view-notes th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+.upload-notes form {
+    margin-top: 20px;
+}
+
+.upload-notes .form-group {
+    margin-bottom: 10px;
+}
+
+.upload-notes label {
+    display: block;
+    font-weight: bold;
+}
+
+.upload-notes input[type="text"],
+.upload-notes textarea,
+.upload-notes input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.upload-notes button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Css for form.html */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-wrapper input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+}
+
+.form-wrapper main.submit-button {
+    text-align: left;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #4CAF50;
+}
+
+
+/* cSs for about me */
+
+.about {
+    text-align: center;
+    padding: 50px;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background-image: url("profile.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.about .social-links a:hover {
+    color: #45a049;
+}
+
+
+
+/* css for social links */
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: rgb(139, 168, 109);
+}
